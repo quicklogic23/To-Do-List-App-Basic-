@@ -26,8 +26,6 @@ const TodoItem = ({ todo, toggleComplete, deleteTodo }: TodoItemProps) => {
           <span className="text-green-700 font-bold text-lg">✔</span>
         )}
       </div>
-
-      {/* Delete Button Box */}
       <button
         className="w-10 h-10 bg-red-500 hover:bg-red-600 text-white flex items-center justify-center cursor-pointer transition"
         onClick={() => deleteTodo(todo.id)}
@@ -40,3 +38,4 @@ const TodoItem = ({ todo, toggleComplete, deleteTodo }: TodoItemProps) => {
 };
 
 export default TodoItem;
+
